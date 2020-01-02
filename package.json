@@ -1,0 +1,34 @@
+{
+  "name": "5to6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/windymelt/5to6.git"
+  },
+  "author": "windymelt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/windymelt/5to6/issues"
+  },
+  "homepage": "https://github.com/windymelt/5to6#readme",
+  "devDependencies": {
+    "@webpack-cli/init": "^0.3.0",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
