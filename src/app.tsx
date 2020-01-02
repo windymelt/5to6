@@ -22,7 +22,7 @@ function App() {
     }, [setWattSecForSec, setWattSec, wattSecForMin])
 
     return (
-        <div className="row">
+        <div className="col">
             <TimeBox powerLabel="500W" power={500} wattSec={wattSec} onMinBoxChange={onMinBoxChange(500)} onSecBoxChange={onSecBoxChange(500)} />
             <TimeBox powerLabel="600W" power={600} wattSec={wattSec} onMinBoxChange={onMinBoxChange(600)} onSecBoxChange={onSecBoxChange(600)} />
             <TimeBox powerLabel="1500W" power={1500} wattSec={wattSec} onMinBoxChange={onMinBoxChange(1500)} onSecBoxChange={onSecBoxChange(1500)} />
@@ -57,11 +57,13 @@ function TimeBox(props: TimeBoxProps) {
     const secBox = <SecBox onChanged={props.onSecBoxChange} value={getSec(props.wattSec)} />
 
     return (
-        <div className="input-group input-group-lg">
-            <div className="input-group-prepend">
-                <span className="input-group-text">{props.powerLabel}</span>
+        <div className="row">
+            <div className="input-group input-group-lg">
+                <div className="input-group-prepend">
+                    <span className="input-group-text">{props.powerLabel}</span>
+                </div>
+                {minBox}<div className="input-group-append input-group-prepend"><span className="input-group-text">:</span></div>{secBox}
             </div>
-            {minBox}<div className="input-group-append input-group-prepend"><span className="input-group-text">:</span></div>{secBox}
         </div>
     )
 }
