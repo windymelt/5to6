@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/windymelt/5to6#readme",
   "devDependencies": {
-    "@webpack-cli/init": "^0.3.0",
+    "@webpack-cli/init": "^1.1.3",
     "source-map-loader": "^0.2.4",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.4",
